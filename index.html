@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sky Language</title>
+<title>Sky Language</title>
 
-  <link rel="manifest" href="./manifest.json">
-  <link rel="apple-touch-icon" href="./icon512.png">
-  <meta name="theme-color" content="#2f80ed">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./icon512.png">
+<meta name="theme-color" content="#2f80ed">
 
-  <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<h2>🌴 SkyLang Reading</h2>
+<div class="app">
 
-<textarea id="text" placeholder="輸入空語或英文"></textarea>
+  <h2>🌴 SkyLang Voice</h2>
 
-<div>
-  <button onclick="playVoice()">🔊 Play</button>
-  <button onclick="stopVoice()">⏹ Stop</button>
+  <textarea id="text" placeholder="輸入空語 / 英文 / 名字"></textarea>
+
+  <div class="btn-row">
+    <button onclick="playVoice()">🔊 Play</button>
+    <button onclick="stopVoice()">⏹ Stop</button>
+    <button onclick="recordVoice()">⬇ Download</button>
+  </div>
+
 </div>
 
 <script src="./voice.js"></script>
