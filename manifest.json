@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Sky Language Voice Tool",
+  "version": "1.0",
+  "description": "空語發音器（他加祿語/馬來語風格）",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab"]
+}
